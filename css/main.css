@@ -165,13 +165,17 @@ p{
     margin-top: 2em;
 }
 
-
+.about .container {
+    display: grid;
+    grid-template-columns: 50% 50%;/* separar el contenedor en dos para mejor visibilidad */
+    
+}
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 2em;
-    grid-column: 1/2;
+    grid-column: 1/ span 2; /*combinando columnas en una*/
 }
 
 
@@ -211,12 +215,6 @@ p{
     width: 100%;
 }
 
-
-.about .container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
-}
 
 
 
